@@ -1,0 +1,20 @@
+{
+  "name": "after/easy-app",
+  "description": "Take It Easy! --app--",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maxim Gabidullin",
+      "email": "after@ya.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "aftaa/easy-core": ">=0.0.1"
+  }
+}

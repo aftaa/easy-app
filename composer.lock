@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5e3f717c2d8493e6f92f4bfc303923d0",
+    "packages": [
+        {
+            "name": "aftaa/easy-core",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aftaa/easy-core.git",
+                "reference": "251735b1941bcb114450a4aec8f18561ab01c1e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aftaa/easy-core/zipball/251735b1941bcb114450a4aec8f18561ab01c1e6",
+                "reference": "251735b1941bcb114450a4aec8f18561ab01c1e6",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxim Gabidullin",
+                    "email": "after@ya.ru"
+                }
+            ],
+            "description": "core",
+            "support": {
+                "issues": "https://github.com/aftaa/easy-core/issues",
+                "source": "https://github.com/aftaa/easy-core/tree/v0.0.1"
+            },
+            "time": "2022-03-02T23:53:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
