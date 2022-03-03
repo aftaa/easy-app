@@ -12,16 +12,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aftaa/easy-core.git",
-                "reference": "251735b1941bcb114450a4aec8f18561ab01c1e6"
+                "reference": "1a75d15dc544ba9a352c070d2e841c4bea956c10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aftaa/easy-core/zipball/251735b1941bcb114450a4aec8f18561ab01c1e6",
-                "reference": "251735b1941bcb114450a4aec8f18561ab01c1e6",
+                "url": "https://api.github.com/repos/aftaa/easy-core/zipball/1a75d15dc544ba9a352c070d2e841c4bea956c10",
+                "reference": "1a75d15dc544ba9a352c070d2e841c4bea956c10",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "common\\": ""
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -35,9 +40,9 @@
             "description": "core",
             "support": {
                 "issues": "https://github.com/aftaa/easy-core/issues",
-                "source": "https://github.com/aftaa/easy-core/tree/v0.0.1"
+                "source": "https://github.com/aftaa/easy-core/tree/main"
             },
-            "time": "2022-03-02T23:53:35+00:00"
+            "time": "2022-03-03T00:12:51+00:00"
         }
     ],
     "packages-dev": [],

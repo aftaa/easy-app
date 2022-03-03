@@ -28,7 +28,6 @@ use common\Router;
     <a href="<?= $this->route('users') ?>" class="ui-button">users</a>
 </header>
 <?php echo $this->content ?>
-
-<?php require_once 'common/debug/index.php' ?>
+<?php require_once 'vendor/aftaa/easy-core/debug/index.php' ?>
 </body>
 </html>
