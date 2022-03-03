@@ -17,6 +17,7 @@ class IndexController extends Controller
     public function indexAction()
     {
         return $this->render(fileName: 'index/index');
+
     }
 
     #[Route('add', name: 'add')]

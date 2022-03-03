@@ -24,7 +24,7 @@ class TestController extends Controller
      * @throws \ReflectionException
      */
     #[Route('/deleted', name: 'deleted_list')]
-    public function deletedAction(Request $request)
+    public function deletedAction(Request $request): Response
     {
 
         $page = $request->query('page') ?? 1;

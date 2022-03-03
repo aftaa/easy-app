@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e3f717c2d8493e6f92f4bfc303923d0",
+    "content-hash": "b784a5ea0076103aa3b08a0fa2990791",
     "packages": [
         {
             "name": "aftaa/easy-core",
@@ -43,6 +43,44 @@
                 "source": "https://github.com/aftaa/easy-core/tree/main"
             },
             "time": "2022-03-03T00:12:51+00:00"
+        },
+        {
+            "name": "aftaa/easy-db",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aftaa/easy-db.git",
+                "reference": "1b24b7c78c3f46d8ec8ad10a9c78181d52acc72f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aftaa/easy-db/zipball/1b24b7c78c3f46d8ec8ad10a9c78181d52acc72f",
+                "reference": "1b24b7c78c3f46d8ec8ad10a9c78181d52acc72f",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "common\\db\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxim Gabidullin",
+                    "email": "after@ya.ru"
+                }
+            ],
+            "description": "test",
+            "support": {
+                "issues": "https://github.com/aftaa/easy-db/issues",
+                "source": "https://github.com/aftaa/easy-db/tree/main"
+            },
+            "time": "2022-03-03T01:40:03+00:00"
         }
     ],
     "packages-dev": [],
