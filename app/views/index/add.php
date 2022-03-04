@@ -1,7 +1,5 @@
 <?php
-
 /** @var $this \common\View */
-
 ?>
 
 

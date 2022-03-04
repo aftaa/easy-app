@@ -6,5 +6,5 @@ use common\types\DTO;
 
 class Config extends DTO
 {
-    public string $layout = 'app/layouts/layout';
+    public string $viewPath = 'app/views';
 }

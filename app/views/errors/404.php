@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="=ru">
+<?php
+    /** @var \Throwable $exception */
+?><!DOCTYPE html>
+<html lang="="ru">
 <head>
     <title>404 Not Found</title>
     <style>
@@ -44,11 +46,12 @@
     <p><a style="color: #ffef8f" href="/">вернуться на главную</a></p>
     <?php if (\common\Application::$debugMode == \common\types\DebugMode::true): ?>
         <div class="error">
-            <?= $e->getMessage() ?>
-            <?= $e->getLine() ?>
-            <?= $e->getFile() ?>
+            <?= $exception->getMessage() ?>
+            on line <?= $exception->getLine() ?>
+            in file <?= $exception->getFile() ?>
         </div>
     <?php endif ?>
 </h1>
+<?php require_once 'app/views/debug/index.php' ?>
 </body>
 </html>

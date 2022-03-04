@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="=ru">
+<?php
+    /** @var Throwable $exception */
+?><!DOCTYPE html>
+<html lang="="ru">
 <head>
     <title>500 Internal Server Error</title>
     <style>
@@ -10,7 +12,7 @@
         }
 
         body {
-            background: #6f096f;
+            background: #670a10;
             color: #ffef8f;
             font-size: 42px;
         }
@@ -46,9 +48,9 @@
     <p><a style="color: #ffef8f" href="/">вернуться на главную</a></p>
     <?php if (\common\Application::$debugMode == \common\types\DebugMode::true): ?>
         <div class="error">
-            <?= $e->getMessage() ?>
-            on line <?= $e->getLine() ?>
-            in file <?= $e->getFile() ?>
+            <?= $exception->getMessage() ?>
+            on line <?= $exception->getLine() ?>
+            in file <?= $exception->getFile() ?>
         </div>
     <?php endif ?>
 </h1>

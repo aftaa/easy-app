@@ -28,6 +28,7 @@ use common\Router;
     <a href="<?= $this->route('users') ?>" class="ui-button">users</a>
 </header>
 <?php echo $this->content ?>
+<?php //throw new \Exception ?>
 <?php require_once 'app/views/debug/index.php' ?>
 </body>
 </html>

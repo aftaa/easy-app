@@ -6,6 +6,7 @@ use app\entities\GuestbookEntry;
 use app\storages\GuestbookEntryStorage;
 use common\Controller;
 use common\db\Transaction;
+use common\exceptions\NotFound;
 use common\http\Request;
 use common\http\Response;
 use common\routes\Route;
@@ -16,6 +17,7 @@ class IndexController extends Controller
     #[Route('', name: 'index')]
     public function indexAction()
     {
+//        throw new NotFound();
         return $this->render(fileName: 'index/index');
 
     }
@@ -55,6 +57,11 @@ class IndexController extends Controller
         $id = $request->request('id');
         /** @var GuestbookEntry $entry */
         $entry = $guestbookEntryStorage->selectOne($id);
+
+        if (!$entry) {
+            throw new NotFound("Запись $id не найдена");
+        }
+
         if ($request->isPost()) {
             $entry->author = $request->post('form')['author'];
             $entry->title = $request->post('form')['title'];

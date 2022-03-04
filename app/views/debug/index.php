@@ -51,6 +51,7 @@
     body, html {
         margin: 0;
         padding: 0;
+        z-index: 50;
     }
 
     #debug-bottom {
@@ -59,6 +60,7 @@
         height: 42px;
         position: fixed;
         width: 100%;
+        z-index: 100;
     }
 
     #debug-bottom a {
