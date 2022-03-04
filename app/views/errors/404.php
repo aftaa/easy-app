@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="=ru">
 <head>
-    <title>500 Internal Server Error</title>
+    <title>404 Not Found</title>
     <style>
         body, html {
             margin: 0;
@@ -10,7 +10,7 @@
         }
 
         body {
-            background: #6f096f;
+            background: #362b36;
             color: #ffef8f;
             font-size: 42px;
         }
@@ -34,24 +34,21 @@
         .error {
             color: red;
             font-size: 23px;
-            margin: auto;
-            width: 750px;
         }
     </style>
 </head>
 <body>
 <h1>
-    500 Internal Server Error<br>
-    <p>Произошла внутренняя ошибка сервера</p>
+    404 Not Found<br>
+    <p>Документ <?= $_SERVER['REQUEST_URI'] ?> не найден на сервере</p>
     <p><a style="color: #ffef8f" href="/">вернуться на главную</a></p>
     <?php if (\common\Application::$debugMode == \common\types\DebugMode::true): ?>
         <div class="error">
             <?= $e->getMessage() ?>
-            on line <?= $e->getLine() ?>
-            in file <?= $e->getFile() ?>
+            <?= $e->getLine() ?>
+            <?= $e->getFile() ?>
         </div>
     <?php endif ?>
 </h1>
-<?php require_once 'app/views/debug/index.php' ?>
 </body>
 </html>
