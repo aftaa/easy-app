@@ -13,6 +13,7 @@ class Config extends DTO
     public array $layoutsDisabled = [
         'errors/500',
         'errors/400',
+        'debug/index',
     ];
 
     /**
