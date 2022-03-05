@@ -52,6 +52,6 @@
         </div>
     <?php endif ?>
 </h1>
-<?php require_once 'app/views/debug/index.php' ?>
+<?= \common\Application::$serviceContainer->init(\common\View::class)->render('debug/index') ?>
 </body>
 </html>

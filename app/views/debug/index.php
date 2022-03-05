@@ -51,7 +51,6 @@
     body, html {
         margin: 0;
         padding: 0;
-        z-index: 50;
     }
 
     #debug-bottom {
