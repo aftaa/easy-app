@@ -53,7 +53,7 @@ class TestController extends Controller
         $entry->text = 'text asd asd asd';
         $entry->created_at = new \DateTimeImmutable();
         $entry->status = GuestbookEntryStatus::VERIFIED;
-        $entry->user_id = 1;
+        $entry->user_id = 2;
         $id = $this->storage->store($entry);
         $transaction->commit();
 

@@ -17,9 +17,11 @@ Count: <?= $count ?>
                 <td><a href="<?= $this->route('edit', ['id' => $entry->id]) ?>"><?= $entry->title ?></a></td>
                 <td><?= $entry->text ?></td>
                 <td><?= $entry->created_at->format('d.m.Y H:i') ?></td>
+                <td><?= $entry->deleted_at?->format('d.m.Y H:i') ?></td>
                 <td><?= $entry->status->value ?></td>
                 <td><?= $entry->user_id ?></td>
                 <td><?= $entry->getUser()->username ?></td>
+                <td><?= $entry->getUser()->password ?></td>
                 <td><input type="checkbox" name="deleteId[]" value="<?= $entry->id ?>"></td>
             </tr>
         <?php endforeach ?>

@@ -18,7 +18,7 @@ class GuestbookEntryStorage extends Storage
             ->where('deleted_at IS NOT NULL')
             ->limit(20)
             ->offset(((int)$page - 1) * 20)
-            ->getQuery()->getResults();
+            ->getQuery()->getResults()->asEntities();
     }
 
     /**
@@ -32,7 +32,7 @@ class GuestbookEntryStorage extends Storage
             ->limit(20)
             ->offset(((int)$page - 1) * 20)
             ->orderBy('id', SORT_DESC)
-            ->getQuery()->getResults();
+            ->getQuery()->getResults()->asEntities();
     }
 
     /**
@@ -43,7 +43,7 @@ class GuestbookEntryStorage extends Storage
         return $this->createQueryBuilder()
             ->select('COUNT(*) AS count')
             ->where('deleted_at IS NOT NULL')
-            ->getQuery()->getResult(transformToEntity: false)['count'];
+            ->getQuery()->getResult()->asArray()['count'];
     }
 
     /**
@@ -68,6 +68,6 @@ class GuestbookEntryStorage extends Storage
         return $this->createQueryBuilder()
             ->select('COUNT(*) AS count')
             ->where('deleted_at IS NULL')
-            ->getQuery()->getResult(transformToEntity: false)['count'];
+            ->getQuery()->getResult()->asArray()['count'];
     }
 }

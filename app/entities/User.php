@@ -22,10 +22,10 @@ class User extends ORM\Entity
     public array $entries;
 
     /**
-     * @return GuestbookEntry[]
+     * @return \common\db\DBAL\QueryResult
      * @throws \ReflectionException
      */
-    public function getEntries(): array
+    public function getEntries(): \common\db\DBAL\QueryResult
     {
         $refStorage = GuestbookEntryStorage::class;
         $refColumn = "user_id";

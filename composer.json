@@ -17,6 +17,7 @@
   "require": {
     "php": ">=8.1",
     "aftaa/easy-core": ">=0.0.1",
-    "aftaa/easy-db": ">=0.0.1"
+    "aftaa/easy-db": ">=0.0.1",
+    "ext-pdo": "*"
   }
 }

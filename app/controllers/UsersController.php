@@ -17,7 +17,7 @@ class UsersController extends Controller
     #[Route('/users', name: 'users')]
     public function indexAction(UserStorage $userStorage): Response
     {
-        $users = $userStorage->selectAll();
+        $users = $userStorage->selectAll()->asEntities();
         return $this->render(fileName: 'users/index', params: [
             'users' => $users,
         ]);
@@ -31,10 +31,7 @@ class UsersController extends Controller
     {
         $userId = $request->query('id');
         /** @var User $user */
-        $user = $userStorage->selectOne($userId);
+        $user = $userStorage->selectOne($userId)->asEntity();
 
-        return $this->render('users/entries', [
-            'entries' => $user->getEntries(),
-        ]);
     }
 }
