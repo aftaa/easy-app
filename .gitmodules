@@ -1,0 +1,3 @@
+[submodule "vendor/aftaa/easy-utils"]
+	path = vendor/aftaa/easy-utils
+	url = git@github.com:aftaa/easy-utils.git
